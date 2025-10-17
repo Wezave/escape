@@ -95,6 +95,7 @@ html {
   font-size: 17px;
   line-height: 20px;
   color: #fff;
+  margin-bottom: 31px;
 }
 
 .title-button {
@@ -147,9 +148,17 @@ html {
   background-color: #F7F7F7;
 }
 
+.featured-posts {
+  display: grid;
+  grid-template-rows: 44px 1fr;
+  padding: 60px 250px;
+}
+
 .featured-posts__title {
+  justify-self: center;
   margin: 0;
   border-bottom: 1px solid #000;
+  height: 43px;
   width: 188px;
   text-wrap: nowrap;
   font-family: "Oxygen";
@@ -158,10 +167,32 @@ html {
   letter-spacing: 2px;
 }
 
-
-.featured-posts__card {
+.featured-posts__cards {
   display: flex;
   width: min-content;
   height: min-content;
   gap: 20px;
+}
+
+.featured-posts__card {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  padding-top: 164px;
+  min-height: 280px;
+  min-width: 480px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.featured-posts__card-the-road {
+  background-image: url('../images/2b7ba23c300d279235514a4d799d7283716f4987.jpg');
+}
+
+.featured-posts__card-info {
+  display: grid;
+  margin: 15px 20px;
+  grid-template-columns: min-content min-content 1fr;
+  justify-self:last baseline;
 }
