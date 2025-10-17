@@ -8,6 +8,19 @@ html {
   block-size: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -80,7 +93,7 @@ html {
 }
 
 .title-heading {
-  margin: 10px 0 5px;
+  margin: 10px 0 25px;
   width: min-content;
   text-wrap: nowrap;
   font-family: 'Lora';
@@ -168,6 +181,7 @@ html {
 }
 
 .featured-posts__cards {
+  margin-top: 22px;
   display: flex;
   width: min-content;
   height: min-content;
@@ -177,9 +191,9 @@ html {
 .featured-posts__card {
   display: grid;
   grid-template-rows: min-content min-content min-content;
-  padding-top: 164px;
+  padding: 134px 20px 15px;
   min-height: 280px;
-  min-width: 480px;
+  min-width: 460px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,9 +204,60 @@ html {
   background-image: url('../images/2b7ba23c300d279235514a4d799d7283716f4987.jpg');
 }
 
+.featured-posts__card-up-down {
+  position: relative;
+  background-image: url('../images/6e292f7e92b1d1dcd8460c93884068f787c714e2.jpg');
+}
+
+.featured-posts__card-up-down::before {
+  content: "Приключения";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  background-color: #DD783F;
+  height: 26px;
+  width: 105px;
+  font-family: "Oxygen";
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.featured-posts__card-title {
+  font-family: "Lora";
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.featured-posts__card-paragraph {
+  font-family: Oxygen;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .featured-posts__card-info {
-  display: grid;
-  margin: 15px 20px;
-  grid-template-columns: min-content min-content 1fr;
-  justify-self:last baseline;
+  display: flex;
+  height: min-content;
+  margin: 15px 20px 0px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: "Oxygen";
+  font-size: 12px;
+  line-height: 35px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-image {
+  max-height: 26px;
+  max-width: 26px;
+  border-radius: 50%;
 }
