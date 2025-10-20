@@ -114,7 +114,8 @@ blockquote {
 .title-button {
   height: 44px;
   width: 167px;
-  font-family: Oxygen;
+  padding-top: 12px;
+  font-family: "Oxygen";
   font-size: 15px;
   line-height: 20px;
   color: #fff;
@@ -124,7 +125,7 @@ blockquote {
   border-radius: 5px;
 }
 
-.button:hover {
+.title-button:hover {
     outline: 2px solid #fff;
 }
 
@@ -327,7 +328,7 @@ blockquote {
   display: flex;
   gap: 0;
   align-self: center;
-  margin: 0px 467px 90px;
+  margin: 0px 467px 83px;
 }
 
 input {
@@ -370,4 +371,8 @@ button:focus {
   height: 89px;
   background-color: rgba(35, 47, 56, 0.6);
   padding: 27px 240px;
+}
+
+.footer-menu {
+  color: rgba(255, 255, 255, 0.6);
 }
