@@ -18,13 +18,13 @@
         </a>
         <nav>
           <ul class="menu">
-            <li> <!--дописать ссылки на блоки ч/з #smthng + id="smthng"-->
+            <li> 
               <a href="#" class="menu-item">
                 Главная
               </a>
             </li>
             <li>
-              <a href="#" class="menu-item">
+              <a href="#categories" class="menu-item">
                 Категории
               </a>
             </li>
@@ -34,7 +34,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="menu-item">
+              <a href="#footer-info" class="menu-item">
                 Контакты
               </a>
             </li>
@@ -55,7 +55,7 @@
     </header>
     <main class="main">
       <section>
-        <ul class="navigation">
+        <ul class="navigation" id="categories">
           <li>
             <a href="#" class="navigation-item">
                 Природа
@@ -271,12 +271,42 @@
         <label for="email" class="visually-hidden">Почта</label>
         <input
           type="text"
-          placeholder="me@example.com"
+          placeholder="Введите свою почту"
           id="email"
           name="email"
           autocomplete="email"
         />
+        <button>Отправить</button>
       </form>
+      <div class="header-menu footer-info" id="footer-info">
+        <a href="#" class="logo">
+          Escape.
+        </a>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#" class="menu-item">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a href="#categories" class="menu-item">
+                Категории
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-item">
+                О нас
+              </a>
+            </li>
+            <li>
+              <a href="#footer-info" class="menu-item">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
